@@ -1,0 +1,37 @@
+{% extends 'includes_extends/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block title %}Login{% endblock title %}
+{% block body %}
+<main class="flex flex-col m-auto lg:flex-row primary max-w-4xl my-10 rounded-lg">
+    <div class="mx-8 my-10 lg:w-full">
+        <h2 class="mb-6 text-xl font-bold leading-tight tracking-tight md:text-3xl">Log In</h2>
+        <form method="POST">
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+            <small>
+            {{ error }}
+            </small>
+            {% endfor %}
+            {% endif %}
+
+            {% render_field form.email placeholder="Email" class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+            {% for error in form.email.errors %}
+            <small>{{error}}</small>
+            {% endfor %}
+
+            {% render_field form.password placeholder="Password" class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+            {% for error in form.password.errors %}
+            <small>{{error}}</small>
+            {% endfor %}
+
+            <button type="submit" class="w-full text-white focus:outline-none font-medium text-sm mt-4 px-5 py-2.5 text-center secondary rounded-lg">Login</button>
+            <p class="mt-4 text-right">Don't have an account? <a href="{% url 'register' %}" class="text-color">Register</a></p>
+        </form>
+    </div>
+
+    <img class="m-8" style="width: 350px; height:350px;" src="{% static 'images/undraw_team_page_re_cffb 1.svg' %}" alt="login">
+</main>
+{% endblock body %}

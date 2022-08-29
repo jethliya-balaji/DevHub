@@ -1,0 +1,193 @@
+{% extends 'includes_extends/base.html' %}
+{% load static %}
+{% block title %}Accounts{% endblock title %}
+{% block body %}
+{% include 'includes_extends/navbar.html' %}
+{% if request.user.is_hiring_manager %}
+<main class="flex flex-col pb-8 mx-4 mt-8 text-lg lg:flex-row">
+    <aside class="mb-6 lg:w-1/4">
+        <div class="flex justify-center py-8 text-center profile-card">
+            <div class="flex-col justify-center text-center">
+                <img class="rounded-full w-24 m-3"  src="{{user.profile_image.url}}" alt="user image" />
+                <span>{{user.get_full_name}}</span>
+                <p>@{{user.username}}</p>
+                <button class="mt-4">
+                    <a href="{% url 'edit_account' %}" class="secondary py-2 px-4 rounded-lg">Edit Profile</a>
+                </button>
+            </div>
+        </div>
+
+        {% if user.linkedin_username or user.github_username or user.twitter_username or user.facebook_username %}
+        <div class="social-info">
+            <span class="mt-8 text-center badge">Social Info</span>
+            <hr class="line w-full mb-2.5">
+            <p>
+                {% if user.linkedin_username%}
+                LinkedIn  &nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://www.linkedin.com/in/{{user.linkedin_username}}/" target="_blank" rel="noopener noreferrer">@{{user.linkedin_username}}</a><br>
+                {% endif %}
+                {% if user.github_username%}
+                Github    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://github.com/{{user.github_username}}" target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if user.twitter_username%}
+                Twitter   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://twitter.com/{{user.twitter_username}}" target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if user.facebook_username %}
+                Facebook  &nbsp;&nbsp;: <a href="https://www.facebook.com/{{user.facebook_username}}" target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+            </p>
+        </div>
+        {% endif %}
+
+    </aside>
+    <section class="lg:w-3/4">
+        <div class="ml-6">
+            <div class="basic-info">
+                <span class="text-center badge">Basic Info</span>
+                <hr class="line w-full mb-2.5">
+                <p>
+                    Name      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.get_full_name}} <br>
+                    Username  &nbsp;&nbsp;&nbsp;: {{user.username}} <br>
+                    Email     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.email}} <br>
+                </p>
+                {% if user.about %}
+                <div class="mt-8 about">
+                    <span class="mb-6 text-2xl">About:</span>
+                    <p>
+                        {{user.about}}
+                    </p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</main>
+{% else %}
+<main class="flex flex-col pb-8 mx-4 mt-8 text-lg lg:flex-row">
+    <aside class="mb-6 lg:w-1/4">
+        <div class="flex justify-center py-8 text-center profile-card">
+            <div class="flex-col justify-center text-center">
+                <img class="rounded-full w-24 m-3"  src="{{user.profile_image.url}}" alt="user image" />
+                <span>{{user.get_full_name}}</span>
+                <p>@{{user.username}}</p>
+                <button class="mt-4">
+                    <a href="{% url 'edit_account' %}" class="secondary py-2 px-4 rounded-lg">Edit Profile</a>
+                </button>
+            </div>
+        </div>
+
+        {% if user.linkedin_username or user.github_username or user.twitter_username or user.facebook_username %}
+        <div class="social-info">
+            <span class="mt-8 text-center badge">Social Info</span>
+            <hr class="line w-full mb-2.5">
+            <p>
+                {% if user.linkedin_username%}
+                LinkedIn  &nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://www.linkedin.com/in/{{user.linkedin_username}}/" target="_blank" rel="noopener noreferrer">@{{user.linkedin_username}}</a><br>
+                {% endif %}
+                {% if user.github_username%}
+                Github    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://github.com/{{user.github_username}}" target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if user.twitter_username%}
+                Twitter   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://twitter.com/{{user.twitter_username}}" target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if user.facebook_username %}
+                Facebook  &nbsp;&nbsp;: <a href="https://www.facebook.com/{{user.facebook_username}}" target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+            </p>
+        </div>
+        {% endif %}
+
+    </aside>
+    <section class="lg:w-3/4">
+        <div class="ml-6">
+            <div class="basic-info">
+                <span class="text-center badge">Basic Info</span>
+                <hr class="line w-full mb-2.5">
+                <p>
+                    Name      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.get_full_name}} <br>
+                    Username  &nbsp;&nbsp;&nbsp;: {{user.username}} <br>
+                    Email     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.email}} <br>
+                    Title     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.title_tag}} <br>
+                </p>
+                {% if user.about %}
+                <div class="mt-8 about">
+                    <span class="mb-6 text-2xl">About:</span>
+                    <p>
+                        {{user.about}}
+                    </p>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="mt-8 more-info">
+                <span class="text-center badge">More Info</span>
+                <hr class="line w-full mb-2.5">
+                <div class="flex">
+                    <div class="mr-12">
+                        <p>
+                            Country            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.country.name}} <br>
+                            Level of Expertise &nbsp;: {{user.expertise_levels}} <br>
+                            Experience         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.experience_years}} Years <br>
+                        </p>
+                    </div>
+
+                    <div class="ml-12">
+                        <p>
+                            Degree      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{user.degree}} <br>
+                            Looking For &nbsp;: {{user.is_looking}} <br>
+                            Is Hirable  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {% if user.is_hirable %}Yes{% else %}No{% endif %}<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 skills">
+                <div class="mr-4 -mb-8 text-right actions text-color">
+                    {% if user.skills.all %}
+                    <a href="{% url 'edit_skill' %}" class="mr-6">Edit Skills</a>
+                    {% endif %}
+                    <a href="{% url 'add_skill' %}">Add Skill</a>
+                </div>
+                <span class="text-center badge">Skills</span>
+                <hr class="line w-full mb-2.5">
+                <div>
+                    {% for skill in user.skills.all %}
+                    {% if skill.description %}
+                    <div class="flex">
+                        <span class="mr-12">{{skill.skill.name}}</span>
+                        <p class="ml-12">{{skill.description}}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                    <div class="flex flex-wrap">
+                        {% for skill in user.skills.all %}
+                        {% if not skill.description  %}
+                        <div class="flex justify-center w-24 py-2 mx-2 mt-4 text-white skill-badge rounded-xl">{{skill.skill.name}}</div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 projects">
+                <div class="mr-4 -mb-8 text-right actions text-color">
+                    {% if user.projects.all %}
+                    <a href="{% url 'edit_project' %}" class="mr-6">Edit Projects</a>
+                    {% endif %}
+                    <a href="{% url 'add_project' %}">Add Project</a>
+                </div>
+                <span class="text-center badge">Projects</span>
+                <hr class="line w-full mb-2.5">
+                <div>
+                    {% for project in user.projects.all %}
+                    <div class="flex">
+                        <span class="mr-12">{{project.name}}</span>
+                        <p class="ml-12">{{project.description}} </p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endif %}
+{% endblock body %}

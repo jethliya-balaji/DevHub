@@ -1,0 +1,34 @@
+{% extends 'includes_extends/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block title %}Edit Project{% endblock title %}
+{% block body %}
+{% include 'includes_extends/navbar.html' %}
+<main class="max-w-4xl m-auto my-10">
+    <form method="POST">
+        {% csrf_token %}
+        {{ formset.management_form }}
+        {% for form in formset %}
+        <div class="flex mb-4 primary">
+            <div class="w-full mx-16 my-10 form">
+                {% render_field form.name placeholder="Project Name" class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+                
+                {% render_field form.description placeholder="Description" class="w-full p-3 px-4 py-2 my-4 border rounded-md h-52 focus:outline-none"  %}
+                
+                {% render_field form.demo_link placeholder="Demo Link" class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none"  %}
+                
+                {% render_field form.github_link placeholder="Github Link" class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none"  %}
+
+                {{form.DELETE.label_tag}}
+                {% render_field form.DELETE class="w-4 h-4 p-3 rounded-lg focus:outline-none" %}
+
+                {% render_field form.id %}
+            </div>
+        </div>
+        {% endfor %}
+        <button type="submit" class="w-full px-6 py-3 my-6 font-bold text-white rounded-lg btn secondary">Update
+            Project
+        </button>
+    </form>
+</main>
+{% endblock body %}

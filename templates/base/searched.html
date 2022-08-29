@@ -1,0 +1,136 @@
+{% extends 'includes_extends/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block title %}Search{% endblock title %}
+{% block body %}
+<nav class="px-2 sm:px-4 py-2.5 rounded primary">
+    <div class="flex flex-wrap items-center justify-between mx-auto">
+        <a href="{% url 'home' %}" class="text-5xl font-bold">Dev Hub</a>
+        <button id="hamburger" type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+            aria-controls="hamburger" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="menu">
+            <ul class="flex flex-col p-4 mt-4 text-lg rounded-lg md:flex-row md:space-x-8 md:mt-0">
+                <li><a href="{% url 'home' %}" class="block py-2 pl-2 pr-2 text-white" {% if request.path == '/'  %} aria-current="page" {% endif %}>Home</a></li>
+                <li><a href="" class="block py-2 pl-2 pr-2 rounded">About</a></li>
+                {% if request.user.is_hiring_manager %}
+                <li><a href="{% url 'saved_profiles' %}" class="block py-2 pl-2 pr-2 rounded" {% if request.path == '/saved/'  %} aria-current="page" {% endif %}>Saved</a></li>
+                {% endif %}
+                <li><a href="{% url 'account' %}" class="block py-2 pl-2 pr-2 rounded" {% if request.path == '/account/'  %} aria-current="page" {% endif %}>Account</a></li>
+                <li><a href="{% url 'logout' %}" class="block py-2 pl-2 pr-2 rounded">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="header-radius primary">
+    <div class="flex flex-col items-center justify-center">
+        <div class="hero-img">
+            <img src="{% static 'images/Search Svg.svg' %}" alt="hero Img">
+        </div>
+        <form method="GET" action="{% url 'search' %}">
+            <div class="flex items-center justify-center search-container">
+                <div class="search-field">
+                    <input class="focus:outline-none" type="search" name="Q" id="search" placeholder="Search by Name, Programming Languages, etc..." value={{search}}>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between mb-12 mx-16">
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label>Hirable:</label>
+                        {% render_field filter.form.is_hirable class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+                    </div>
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label>Looking For:</label>
+                        {% render_field filter.form.is_looking class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+                    </div>
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label>Level Of Expertise:</label>
+                        {% render_field filter.form.expertise_levels class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+                    </div>
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label>Level of Experience:</label>
+                        {% render_field filter.form.experience_years class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+                    </div>
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label>Degree:</label>
+                        {% render_field filter.form.degree class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+                    </div>
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label>Country:</label>
+                        {% render_field filter.form.country class="p-3 px-4 border rounded-md focus:outline-none" %}
+                    </div>
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label>Skills:</label>
+                        {% render_field filter.form.skill class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" size="1" %}
+                    </div>
+                    <div class="flex flex-col" style="width: 20rem;">
+                        <label class="invisible">Submit</label>
+                        <button class="w-full p-3 px-4 py-2 my-2 border border-none rounded-md focus:outline-none secondary" type="submit">Search
+                        </button>
+                    </div>
+            </div>
+        </form>
+    </div>
+</header>
+<main class="flex my-10">
+    <div class="flex flex-wrap justify-center">
+        {% for profile in profiles %}
+        <div class="mb-5 profile-box m-2" style="width: 30rem;">
+            <div class="flex">
+                <img src="{{profile.profile_image.url}}" alt="profile img" class="m-2 rounded-full" width="60px" height="60px">
+                <div>
+                    <h3 class="text-white"><a href="{% url 'profile' profile.username  %}">{{profile.get_full_name}}</a></h3>
+                    <p class="text-sm text-white">{{profile.username }}</p>
+                    <p class="text-white">{{profile.title_tag}}</p>
+                </div>
+            </div>
+            <p class="m-2 text-white">{{profile.about | slice:200}}...</p>
+            <div class="flex m-2 text-white">
+                <p>
+                    Country : {{profile.country.name}}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Is looking For : {{profile.is_looking}}<br>
+                </p>
+            </div>
+            <div class="flex m-2 text-white">
+                <p>
+                    Experience : {{profile.experience_years}} Years
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Degree : {{profile.profile.degree}}<br>
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-evenly">
+                {% for skill in profile.skills.all|slice:":4" %}
+                <div class="flex justify-center w-24 py-2 mx-2 mt-4 text-white skill-badge rounded-xl">{{skill.skill.name}}</div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock body %}
+
+
+
+
+{% for profile in profiles %}
+<hr>
+<img src="{{profile.profile_image.url}}" width="50px"><br>
+<a href="{% url 'profile' profile.username  %}">
+{{profile.get_full_name}}<br>
+</a>
+{{profile.title_tag}}<br>
+{{profile.about | slice:100}}<br>
+
+{% for skill in profile.skills.all|slice:":4"%}
+{{skill.skill.name}}:{{skill.description}}<br>
+{% endfor %}
+
+{% endfor %}

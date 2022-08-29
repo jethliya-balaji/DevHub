@@ -1,0 +1,331 @@
+{% extends 'includes_extends/base.html' %}
+{% load static %}
+{% block title %}Profile{% endblock title %}
+{% block body %}
+{% include 'includes_extends/navbar.html' %}
+{% if HDB %}
+<main class="flex flex-col pb-8 mx-4 mt-8 text-lg lg:flex-row">
+    <aside class="mb-6 lg:w-1/4">
+        <div class="flex justify-center py-8 text-center profile-card">
+            <div class="flex-col justify-center text-center">
+                <img class="rounded-full w-24 m-3" src="{{profile.profile_image}}" alt="user image" />
+                <span>{{profile.first_name}} {{profile.last_name}}</span>
+                <p>@{{profile.username}}</p>
+            </div>
+        </div>
+
+        {% if profile.linkedin_username or profile.github_username or profile.twitter_username or profile.facebook_username %}
+        <div class="social-info">
+            <span class="mt-8 text-center badge">Social Info</span>
+            <hr class="line w-full mb-2.5">
+            <p>
+                {% if profile.linkedin_username%}
+                LinkedIn &nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://www.linkedin.com/in/{{profile.linkedin_username}}/"
+                    target="_blank" rel="noopener noreferrer">@{{profile.linkedin_username}}</a><br>
+                {% endif %}
+                {% if profile.github_username%}
+                Github &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a
+                    href="https://github.com/{{profile.github_username}}" target="_blank"
+                    rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if profile.twitter_username%}
+                Twitter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://twitter.com/{{profile.twitter_username}}"
+                    target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if profile.facebook_username %}
+                Facebook &nbsp;&nbsp;: <a href="https://www.facebook.com/{{profile.facebook_username}}" target="_blank"
+                    rel="noopener noreferrer"></a><br>
+                {% endif %}
+            </p>
+        </div>
+        {% endif %}
+        <button class="px-4 py-2 mt-4 text-white rounded-lg btn secondary">Schedule Video Call</button>
+        {% if request.user.is_hiring_manager %}
+        {% if saved %}
+        <a href="" class="px-4 py-2 mt-4 text-white rounded-lg btn secondary">Remove</a>
+        {% else %}
+        <a href="" class="px-4 py-2 mt-4 text-white rounded-lg btn secondary">Save</a>
+        {% endif %}
+        {% endif %}
+
+    </aside>
+
+    <section class="lg:w-3/4">
+        <div class="ml-6">
+            <div class="basic-info">
+                <span class="text-center badge">Basic Info</span>
+                <hr class="line w-full mb-2.5">
+                <p>
+                    Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profile.first_name}} {{profile.last_name}}
+                    <br>
+                    Username &nbsp;&nbsp;&nbsp;: {{profile.username}} <br>
+                    Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profile.email}} <br>
+                    Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    {{profile.title_tag}} <br>
+                </p>
+                {% if profile.about %}
+                <div class="mt-8 about">
+                    <span class="mb-6 text-2xl">About:</span>
+                    <p>
+                        {{profile.about}}
+                    </p>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="mt-8 more-info">
+                <span class="text-center badge">More Info</span>
+                <hr class="line w-full mb-2.5">
+                <div class="flex">
+                    <div class="mr-12">
+                        <p>
+                            Country
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                            {{profile.country}} <br>
+                            Level of Expertise &nbsp;: {{profile.expertise_levels}} <br>
+                            Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                            {{profile.experience_years}} Years <br>
+                        </p>
+                    </div>
+
+                    <div class="ml-12">
+                        <p>
+                            Degree &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profile.degree}} <br>
+                            Looking For &nbsp;: {{profile.is_looking}} <br>
+                            Is Hirable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {% if profile.is_hirable %}Yes{% else %}No{%endif %}<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {% if profile.skills %}
+            <div class="mt-8 skills">
+                <span class="text-center badge">Skills</span>
+                <hr class="line w-full mb-2.5">
+                <div>
+                    <div class="flex flex-wrap">
+                        {% for skill in profile.skills %}
+                        {% if not skill.description %}
+                        <div class="flex justify-center w-24 py-2 mx-2 mt-4 text-white skill-badge rounded-xl">
+                            {{skill}}</div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</main>
+{% else %}
+<main class="flex flex-col pb-8 mx-4 mt-8 text-lg lg:flex-row">
+    <aside class="mb-6 lg:w-1/4">
+        <div class="flex justify-center py-8 text-center profile-card">
+            <div class="flex-col justify-center text-center">
+                <img class="rounded-full w-24 m-3" src="{{profile.profile_image.url}}" alt="user image" />
+                <span>{{profile.get_full_name}}</span>
+                <p>@{{profile.username}}</p>
+            </div>
+        </div>
+
+        {% if profile.linkedin_username or profile.github_username or profile.twitter_username or profile.facebook_username %}
+        <div class="social-info">
+            <span class="mt-8 text-center badge">Social Info</span>
+            <hr class="line w-full mb-2.5">
+            <p>
+                {% if profile.linkedin_username%}
+                LinkedIn &nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://www.linkedin.com/in/{{profile.linkedin_username}}/"
+                    target="_blank" rel="noopener noreferrer">@{{profile.linkedin_username}}</a><br>
+                {% endif %}
+                {% if profile.github_username%}
+                Github &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a
+                    href="https://github.com/{{profile.github_username}}" target="_blank"
+                    rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if profile.twitter_username%}
+                Twitter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://twitter.com/{{profile.twitter_username}}"
+                    target="_blank" rel="noopener noreferrer"></a><br>
+                {% endif %}
+                {% if profile.facebook_username %}
+                Facebook &nbsp;&nbsp;: <a href="https://www.facebook.com/{{profile.facebook_username}}" target="_blank"
+                    rel="noopener noreferrer"></a><br>
+                {% endif %}
+            </p>
+        </div>
+        {% endif %}
+        <button class="px-4 py-2 mt-4 text-white rounded-lg btn secondary">Schedule Video Call</button>
+        {% if request.user.is_hiring_manager %}
+        {% if saved %}
+        <a href="{% url 'remove_profile' profile.username %}" class="px-4 py-2 mt-4 text-white rounded-lg btn secondary">Remove</a>
+        {% else %}
+        <a href="{% url 'save_profile' profile.username %}" class="px-4 py-2 mt-4 text-white rounded-lg btn secondary">Save</a>
+        {% endif %}
+        {% endif %}
+
+    </aside>
+
+    <section class="lg:w-3/4">
+        <div class="ml-6">
+            <div class="basic-info">
+                <span class="text-center badge">Basic Info</span>
+                <hr class="line w-full mb-2.5">
+                <p>
+                    Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profile.get_full_name}}
+                    <br>
+                    Username &nbsp;&nbsp;&nbsp;: {{profile.username}} <br>
+                    Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profile.email}} <br>
+                    Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                    {{profile.title_tag}} <br>
+                </p>
+                {% if profile.about %}
+                <div class="mt-8 about">
+                    <span class="mb-6 text-2xl">About:</span>
+                    <p>
+                        {{profile.about}}
+                    </p>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="mt-8 more-info">
+                <span class="text-center badge">More Info</span>
+                <hr class="line w-full mb-2.5">
+                <div class="flex">
+                    <div class="mr-12">
+                        <p>
+                            Country
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                            {{profile.country.name}} <br>
+                            Level of Expertise &nbsp;: {{profile.expertise_levels}} <br>
+                            Experience &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                            {{profile.experience_years}} Years <br>
+                        </p>
+                    </div>
+
+                    <div class="ml-12">
+                        <p>
+                            Degree &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profile.degree}} <br>
+                            Looking For &nbsp;: {{profile.is_looking}} <br>
+                            Is Hirable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {% if profile.is_hirable %}Yes{% else %}No{%endif %}<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {% if profile.skills.all %}
+            <div class="mt-8 skills">
+                <span class="text-center badge">Skills</span>
+                <hr class="line w-full mb-2.5">
+                <div>
+                    {% for skill in profile.skills.all %}
+                    {% if skill.description %}
+                    <div class="flex">
+                        <span class="mr-12">{{skill.skill.name}}</span>
+                        <p class="ml-12">{{skill.description}}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                    <div class="flex flex-wrap">
+                        {% for skill in profile.skills.all %}
+                        {% if not skill.description %}
+                        <div class="flex justify-center w-24 py-2 mx-2 mt-4 text-white skill-badge rounded-xl">
+                            {{skill.skill.name}}</div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if profile.projects.all %}
+            <div class="mt-8 projects">
+                <span class="text-center badge">Projects</span>
+                <hr class="line w-full mb-2.5">
+                <div>
+                    {% for project in profile.projects.all %}
+                    <div class="flex">
+                        <span class="mr-12">{{project.name}}</span>
+                        <p class="ml-12">{{project.description}} </p>
+                    </div>
+                    <div class="flex">
+                        <div class="mr-16"></div>
+                        <div class="ml-20 mt-2.5">
+                            {% if project.demo_link %}
+                            <a class="px-6 py-1 mr-4 text-white rounded-lg btn secondary" href="{{project.demo_link}}">Demo</a>
+                            {% endif %}
+                            {% if project.github_link %}
+                            <a class="px-6 py-1 ml-4 text-white rounded-lg btn secondary" href="{{project.github_link}}">Github</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if profile.linkedin_username %}
+            <div class="linkedin-info">
+                <span class="mt-8 text-center badge">LinkedIn Info</span>
+                <hr class="line w-full mb-2.5">
+                <div class="profile">
+                    <div class="flex my-3 p-name">
+                        <span>LinkendIn Name</span>
+                        <p class="name">: {{linkedinName}}</p>
+                    </div>
+                    <div class="flex my-3 headline">
+                        <span>LinkendIn Headline</span>
+                        <p class="ml-3">: {{linkedinHeadline}}</p>
+                    </div>
+                    <div class="flex my-3 industry-name">
+                        <span>Industry Name</span>
+                        <p class="indus-name">: {{linkedinIndustryName}}</p>
+                    </div>
+                    <div class="flex my-3 summary">
+                        <span>Summarry</span>
+                        <p class="sum"> : {{linkedinSummary}}</p>
+                    </div>
+                    <div class="flex my-3 country-">
+                        <span>Country</span>
+                        <p class="country">: {{linkedinGeoCountryName}}</p>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <h3 class="mt-4">LinkedIn Education Details</h3>
+                    {% for school in linkedinEducation %}
+                    <div class="mt-4 box">
+                        {% for key, value in school.items %}
+                        <div class="flex my-3">
+                            <span>{{key}}</span>
+                            <p>: {{value}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="experience">
+                    <h3 class="mt-4">LinkedIn Experience Details</h3>
+                    {% for company in linkedinExperience %}
+                    <div class="mt-4 box">
+                        {% for key, value in company.items %}
+                        <div class="flex my-3 company-name">
+                            <span>{{key}}</span>
+                            <p class="com">: {{value}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</main>
+{% endif %}
+{% endblock body %}
+
+<!-- firstName > lastName > headline > summary > industryName  > geoCountryName -->
+<!-- education > fieldOfStudy > degreeName > schoolName > timePeriod -->
+<!-- skills > name -->
+<!-- experience > companyName > description > title > timePeriod -->

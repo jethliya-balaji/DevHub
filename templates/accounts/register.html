@@ -1,0 +1,57 @@
+{% extends 'includes_extends/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block title %}Register{% endblock title %}
+{% block body %}
+<main class="flex flex-col m-auto lg:flex-row primary max-w-4xl my-10 rounded-lg">
+    <div class="mx-8 mt-24 mb-12 lg:w-full ">
+        <h2 class="mb-6 text-xl font-bold leading-tight tracking-tight md:text-3xl">Register Here</h2>
+        <form method="POST">
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+            <small>
+                {{ error }}
+            </small>
+            {% endfor %}
+            {% endif %}
+
+            <div class="flex flex-col lg:flex-row">
+                {% render_field form.first_name placeholder="First Name" class="p-3 px-4 py-2 mb-4 rounded-md lg:w-1/2 lg:my-2 lg:border focus:outline-none" %}
+                {% render_field form.last_name placeholder="Last Name" class="p-3 px-4 py-2 border rounded-md lg:w-1/2 lg:my-2 lg:ml-8 focus:outline-none" %}
+            </div>
+
+            {% render_field form.email placeholder="Email" class="w-full p-3 px-4 py-2 my-4 border rounded-md focus:outline-none" %}
+            {% for error in form.email.errors %}
+            <small>{{error}}</small><br><br>
+            {% endfor %}
+
+            <div class="flex flex-col lg:flex-row">
+                {% render_field form.password1 placeholder="Password" class="px-4 py-2 mb-4 rounded-md lg:w-1/2 lg:my-2 lg:border focus:outline-none" %}
+                {% for error in form.password1.errors %}
+                <small>{{error}}</small><br><br>
+                {% endfor %}
+
+                {% render_field form.password2 placeholder="Confirm Password" class="px-4 py-2 mb-4 border rounded-md lg:w-1/2 lg:my-2 lg:ml-8 focus:outline-none" %}
+                {% for error in form.password2.errors %}
+                <small class="invalid-feedback">{{error}}</small><br><br>
+                {% endfor %}
+            </div>
+
+            <div class="flex flex-col lg:flex-row lg:items-center lg:content-center">
+                <div class="lg:w-1/2 ">
+                    <span class="font-bold">Join as: </span>
+                    <input type="radio" class="ml-4" name="account_type" id="hiring-manager" value="True" required>
+                    <label for="hiring-manager">Hiring Manager</label>
+                    <input type="radio" class="ml-4" name="account_type" id="developer" value="False" required>
+                    <label for="developer">Developr / Job Seeker</label>
+                </div>
+
+                <button type="submit" class=" lg:w-1/2 text-white focus:outline-none lg:ml-8 font-medium text-sm mt-4 px-5 py-2.5 text-center secondary rounded-lg">Register</button>
+            </div>
+            <p class="mt-4 text-center">Already have an account? <a href="{% url 'login' %}" class="text-color">Login</a></p>
+        </form>
+    </div>
+</main>
+{% endblock body %}

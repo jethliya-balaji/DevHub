@@ -1,0 +1,32 @@
+.tertiary {
+  background-color: #17223B;
+}
+
+.primary {
+  background-color: #263859;
+}
+
+.secondary {
+  background-color: #FF6768;
+}
+
+.skill-badge {
+  text-align: center;
+  background-color: #263859;
+}
+
+.text-color {
+  color: #FF6768;
+}
+
+a[aria-current="page"] {
+  color: #FF6768;
+}
+
+li a:hover {
+  color: #FF6768;
+}
+
+.icon i {
+  color: #FF6768;
+}

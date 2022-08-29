@@ -1,0 +1,18 @@
+{% extends 'includes_extends/base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block title %}Add Skill{% endblock title %}
+{% block body %}
+{% include 'includes_extends/navbar.html' %}
+<main class="flex m-auto mb:5 primary lg:max-w-4xl rounded-lg my-10">
+    <div class="w-full mx-16 mt-20 mb-10 form">
+        <form method="POST">
+            {% csrf_token %}
+            {% render_field form.skill class="w-full p-3 px-4 py-2 my-2 border rounded-md focus:outline-none" %}
+            {% render_field form.description  class="w-full p-3 px-4 py-2 my-4 border rounded-md h-52 focus:outline-none" placeholder="Description"%}
+            <button type="submit"  class="w-full px-6 py-4 mt-4 font-bold text-white rounded-lg btn secondary">Add Skill</button>
+        </form>
+    </div>
+</main>
+{% endblock body %}
+
