@@ -5,24 +5,25 @@
 
 <br>
 
-## About Project
-DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
-The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out. 
 
 ## Table of Contents
 
 - [Welcome to the official repository of DevHub web application.](#welcome-to-the-official-repository-of-devhub-web-application)
-- [About Project](#about-project)
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
+- [About Project](#about-project)
 - [Tools & Technologies Used](#tools--technologies-used)
 - [Features](#features)
 - [Project Specification](#project-specification)
-- [Start The App](#start-the-app)
+- [Prerequisite](#prerequisite)
 
 ## Introduction
 
 This markdown file contains all technical documentation related to the setup, deployment, update, and customization of DevHub web application.
+
+## About Project
+DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
+The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out. 
 
 ## Tools & Technologies Used
 This project was developed using ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) and the following technologies were used: <br/>
@@ -73,10 +74,16 @@ This project is fully responsive and can be accessed / viewed on all screens/dev
 * Tablets
 * Laptops & Desktop
 
-## Start The App
+## Prerequisite 
 
-- **Requirements:** Python installed in system
+To run DevHub locally on your system, the following are required:
+- A computer running macOS, Windows or Linux 
+- Python or pip to manage packages 
+- A supported version of Django 
 
+
+
+```
 - **Environment Variables:** To run this project, you will need to add the following environment variables to your .env file
 
     `HARPERDB_URL`
