@@ -14,6 +14,7 @@
 - [About Project](#about-project)
 - [Tools & Technologies Used](#tools--technologies-used)
 - [Features](#features)
+- [Usage](#usage)
 - [Project Specification](#project-specification)
 - [Prerequisite](#prerequisite)
 - [Setup and Installation](#setup-and-installation)
@@ -69,6 +70,13 @@ __Developers__ - An individual that is interested in getting a job as a develope
     - View and Interact with the documentation
     - No access to use until registered
 
+## Usage
+
+ * Visit the website
+ * Register as a hiring manager or developer
+ * Login with your registered details
+ * Explore the full features and different pages of the site
+  
 ## Project Specification
 This project is fully responsive and can be accessed / viewed on all screens/devices
 * Mobile Phones
