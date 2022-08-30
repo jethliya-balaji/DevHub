@@ -18,6 +18,7 @@
 - [Project Specification](#project-specification)
 - [Prerequisite](#prerequisite)
 - [Setup and Installation](#setup-and-installation)
+- [Contributors](#contributors)
 
 ## Introduction
 
@@ -135,3 +136,36 @@ git clone https://github.com/jethliya-balaji/DevHub.git
     http://127.0.0.1:8000/admin/ now go this url in your browser and login with superuser credentials. Now in projects_skills section click on the skill and create some skills and then logout.
 
     now got to http://127.0.0.1:8000/ and explorer the site
+
+## Contributors
+ __Jethliya Balaji__
+
+ [//]: contributor-faces
+
+<a href="https://github.com/jethliya-balaji"><img src="https://avatars.githubusercontent.com/u/74290492?v=4" title="Balaji" width="80" height="80"></a>
+
+[//]: contributor-faces
+
+* Stack - Backend & Design
+* Email - yourmail@gmail.com 
+  
+__Adebowale Omolara__
+
+[//]: contributor-faces
+
+<a href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/72765403?v=4
+" title="omolara" width="80" height="80"></a>
+
+[//]: contributor-faces
+* Stack - Frontend 
+* Email - debbiegterra@gmail.com
+
+__Ishika Agrawal__
+
+[//]: contributor-faces
+
+<a href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/80105387?v=4" title="Ishika" width="80" height="80"></a>
+
+[//]: contributor-faces
+* Stack - Frontend
+* Email - ishikaagrawal0711@gmail.com
