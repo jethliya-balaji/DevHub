@@ -1,7 +1,7 @@
 <img src="../../devhub/DevHub/static/images/devhub.png" alt="DevHub Homepage" />
 
 ## Welcome to the official repository of DevHub web application. 
- __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by  Harper DB and Agora
+ __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a target="_blank" href="https://github.com/divanov11">Dennis Ivy</a> sponsored by <a target="_blank" href="https://harperdb.io/">Harper DB</a> and <a target="_blank" href="https://www.agora.io/en/">Agora</a> 
 
 <br>
 
@@ -143,7 +143,7 @@ git clone https://github.com/jethliya-balaji/DevHub.git
 
  [//]: contributor-faces
 
-<a href="https://github.com/jethliya-balaji"><img src="https://avatars.githubusercontent.com/u/74290492?v=4" title="Balaji" width="80" height="80"></a>
+<a target="_blank" href="https://github.com/jethliya-balaji"><img src="https://avatars.githubusercontent.com/u/74290492?v=4" title="Balaji" width="80" height="80"></a>
 
 [//]: contributor-faces
 
@@ -154,7 +154,7 @@ __Adebowale Omolara__
 
 [//]: contributor-faces
 
-<a href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/72765403?v=4" title="omolara" width="80" height="80"></a>
+<a target="_blank" href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/72765403?v=4" title="omolara" width="80" height="80"></a>
 
 [//]: contributor-faces
 * Stack - Frontend 
@@ -164,7 +164,7 @@ __Ishika Agrawal__
 
 [//]: contributor-faces
 
-<a href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/80105387?v=4" title="Ishika" width="80" height="80"></a>
+<a target="_blank" href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/80105387?v=4" title="Ishika" width="80" height="80"></a>
 
 [//]: contributor-faces
 * Stack - Frontend
