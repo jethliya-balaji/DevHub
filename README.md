@@ -1,7 +1,7 @@
 <img src="../../devhub/DevHub/static/images/devhub.png" alt="DevHub Homepage" />
 
 ## Welcome to the official repository of DevHub web application. 
- __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by Harper DB and Agora
+ __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by  Harper DB and Agora
 
 <br>
 
@@ -19,6 +19,7 @@
 - [Prerequisite](#prerequisite)
 - [Setup and Installation](#setup-and-installation)
 - [Contributors](#contributors)
+- [Acknowledgement](#acknowledgement)
 
 ## Introduction
 
@@ -168,3 +169,6 @@ __Ishika Agrawal__
 [//]: contributor-faces
 * Stack - Frontend
 * Email - ishikaagrawal0711@gmail.com
+
+## Acknowledgement
+We sincerely appreciate the organizers and the sponsors for this hackathon and for everything that was put in place to make it a success. We have been pushed to do a lot during the course of this hackathon. We are grateful for this opportunity that was given to learn, grow, and also connect with other amazing designers and developers.
