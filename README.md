@@ -45,6 +45,11 @@ __Developers__ - An individual that is interested in getting a job as a develope
     - View and Interact with the documentation
     - No access to use until registered
 
+## Project Specification
+This project is fully responsive and can be accessed / viewed on all screens/devices
+* Mobile Phones
+* Tablets
+* Laptops & Desktop
 
 ## Start The App
 
