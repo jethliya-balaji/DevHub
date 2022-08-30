@@ -16,6 +16,7 @@
 - [Features](#features)
 - [Project Specification](#project-specification)
 - [Prerequisite](#prerequisite)
+- [Setup and Installation](#setup-and-installation)
 
 ## Introduction
 
@@ -82,7 +83,12 @@ To run DevHub locally on your system, the following are required:
 - A supported version of Django 
 
 
+## Setup and Installation
+The following installation guides will guide you step-by-step to run this project locally.
 
+- Clone the repository on your local machine - 
+```sh
+git clone https://github.com/jethliya-balaji/DevHub.git
 ```
 - **Environment Variables:** To run this project, you will need to add the following environment variables to your .env file
 
