@@ -1,8 +1,7 @@
 <img src="../../devhub/DevHub/static/images/devhub.png" alt="DevHub Homepage" />
 
 ## Welcome to the official repository of DevHub web application. 
-### Note: 
-This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by Harper DB and Agora
+ __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by Harper DB and Agora
 
 <br>
 
@@ -14,10 +13,10 @@ The primary feature of the site is that all developers' crucial information is f
 
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Prerequisite](#prerequisite)
-5. [Setup and Instatllation](#setup-and-installation)
-6. [Product Specification](#product-specialization)
+3. [Product Specification](#product-specialization)
+4. [Technologies Used](#technologies-used)
+5. [Prerequisite](#prerequisite)
+6. [Setup and Instatllation](#setup-and-installation)
 7.  [Usage](#usage)
 8. [How To Contribute](#how-to-contribute)
 9. [Acknowlodgement](#acknowledgement)
@@ -26,6 +25,26 @@ The primary feature of the site is that all developers' crucial information is f
 ## Introduction
 
 This markdown file contains all technical documentation related to the setup, deployment, update, and customization of DevHub web application.
+
+## Features
+
+Below are some of the major features of DevHub:
+
+__Hiring Managers__ - An individual that is interested in hiring developers. Users registered as HRs would have access to the following pages after registration:
+
+    - Home page, they can browse through developers on the page 
+    - Visit the platform to view basic information about it
+    - View and Interact with the documentation
+    - No access to use until registered
+
+
+__Developers__ - An individual that is interested in getting a job as a developer. Users registered as developers would have access to the following pages:
+
+    - Home page, they can browse through developers on the page 
+    - Visit the platform to view basic information about it
+    - View and Interact with the documentation
+    - No access to use until registered
+
 
 ## Start The App
 
