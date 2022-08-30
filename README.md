@@ -11,20 +11,42 @@ The primary feature of the site is that all developers' crucial information is f
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Product Specification](#product-specialization)
-4. [Technologies Used](#technologies-used)
-5. [Prerequisite](#prerequisite)
-6. [Setup and Instatllation](#setup-and-installation)
-7.  [Usage](#usage)
-8. [How To Contribute](#how-to-contribute)
-9. [Acknowlodgement](#acknowledgement)
-10. [Contributors](#contributors)
+- [Welcome to the official repository of DevHub web application.](#welcome-to-the-official-repository-of-devhub-web-application)
+- [About Project](#about-project)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Tools & Technologies Used](#tools--technologies-used)
+- [Features](#features)
+- [Project Specification](#project-specification)
+- [Start The App](#start-the-app)
 
 ## Introduction
 
 This markdown file contains all technical documentation related to the setup, deployment, update, and customization of DevHub web application.
+
+## Tools & Technologies Used
+This project was developed using ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) and the following technologies were used: <br/>
+* __Design__<br/>
+        ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+* __Frontend__<br/>
+      ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+      ![tailwindCss](https://img.shields.io/badge/tailwindCss-%231572B6.svg?style=for-the-badge&logo=tailwindCss&logoColor=white)
+      ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+* __Backend__<br/>
+        ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+        ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+
+* __Databases__<br/>
+        ![Harperdb](https://img.shields.io/badge/harperdb-%23F24E1E.svg?style=for-the-badge&logo=harperdb&logoColor=white)
+        ![sqlite](https://img.shields.io/badge/sqlite-%2300f.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+
+<!-- * __API__<br/>
+        ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) -->
+
+* __Project Management and Version Control__<br/>
+        ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ## Features
 
