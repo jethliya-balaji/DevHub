@@ -140,15 +140,15 @@
                 {% if profile.github_username%}
                 Github &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a
                     href="https://github.com/{{profile.github_username}}" target="_blank"
-                    rel="noopener noreferrer"></a><br>
+                    rel="noopener noreferrer">@{{profile.github_username}}</a><br>
                 {% endif %}
                 {% if profile.twitter_username%}
                 Twitter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="https://twitter.com/{{profile.twitter_username}}"
-                    target="_blank" rel="noopener noreferrer"></a><br>
+                    target="_blank" rel="noopener noreferrer">@{{profile.twitter_username}}</a><br>
                 {% endif %}
                 {% if profile.facebook_username %}
                 Facebook &nbsp;&nbsp;: <a href="https://www.facebook.com/{{profile.facebook_username}}" target="_blank"
-                    rel="noopener noreferrer"></a><br>
+                    rel="noopener noreferrer">@{{profile.facebook_username}}</a><br>
                 {% endif %}
             </p>
         </div>
