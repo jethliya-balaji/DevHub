@@ -1,12 +1,105 @@
-# Dev Hub
+<img src="https://i.im.ge/2022/08/30/Oyc0t1.devhub.png" alt="DevHub Homepage" />
 
-Dev Hub is a website where recruiters can find engineers all within one spot without having to visit other websites. This project is indeed a part of a hackathon. This hackathon was brought to us by Dennis Ivy and is sponsored by Harper DB and Agora.
+## Welcome to the official repository of DevHub web application. 
+ __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11" target="_blank" >Dennis Ivy</a> sponsored by <a target="_blank" href="https://harperdb.io/">Harper DB</a> and <a target="_blank" href="https://www.agora.io/en/">Agora</a> 
+
+<br>
 
 
-## Start The App
+## Table of Contents
 
-- **Requirements:** Python installed in system
+- [Welcome to the official repository of DevHub web application.](#welcome-to-the-official-repository-of-devhub-web-application)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [About Project](#about-project)
+- [Tools & Technologies Used](#tools--technologies-used)
+- [Features](#features)
+- [Usage](#usage)
+- [Project Specification](#project-specification)
+- [Prerequisite](#prerequisite)
+- [Setup and Installation](#setup-and-installation)
+- [Contributors](#contributors)
+- [Acknowledgement](#acknowledgement)
 
+## Introduction
+
+This markdown file contains all technical documentation related to the setup, deployment, update, and customization of DevHub web application.
+
+## About Project
+DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
+The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out. 
+
+## Tools & Technologies Used
+This project was developed using ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) and the following technologies were used: <br/>
+* __Design__<br/>
+        ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+* __Frontend__<br/>
+      ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+      ![tailwindCss](https://img.shields.io/badge/tailwindCss-%231572B6.svg?style=for-the-badge&logo=tailwindCss&logoColor=white)
+      ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+* __Backend__<br/>
+        ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+        ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+
+* __Databases__<br/>
+        ![Harperdb](https://img.shields.io/badge/harperdb-%23F24E1E.svg?style=for-the-badge&logo=harperdb&logoColor=white)
+        ![sqlite](https://img.shields.io/badge/sqlite-%2300f.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+
+<!-- * __API__<br/>
+        ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) -->
+
+* __Project Management and Version Control__<br/>
+        ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+## Features
+
+Below are some of the major features of DevHub:
+
+__Hiring Managers__ - An individual that is interested in hiring developers. Users registered as HRs would have access to the following pages after registration:
+
+    - Home page, they can browse through developers on the page 
+    - Visit the platform to view basic information about it
+    - View and Interact with the documentation
+    - No access to use until registered
+
+
+__Developers__ - An individual that is interested in getting a job as a developer. Users registered as developers would have access to the following pages:
+
+    - Home page, they can browse through developers on the page 
+    - Visit the platform to view basic information about it
+    - View and Interact with the documentation
+    - No access to use until registered
+
+## Usage
+
+ * Visit the website
+ * Register as a hiring manager or developer
+ * Login with your registered details
+ * Explore the full features and different pages of the site
+  
+## Project Specification
+This project is fully responsive and can be accessed / viewed on all screens/devices
+* Mobile Phones
+* Tablets
+* Laptops & Desktop
+
+## Prerequisite 
+
+To run DevHub locally on your system, the following are required:
+- A computer running macOS, Windows or Linux 
+- Python or pip to manage packages 
+- A supported version of Django 
+
+
+## Setup and Installation
+The following installation guides will guide you step-by-step to run this project locally.
+
+- Clone the repository on your local machine - 
+```sh
+git clone https://github.com/jethliya-balaji/DevHub.git
+```
 - **Environment Variables:** To run this project, you will need to add the following environment variables to your .env file
 
     `HARPERDB_URL`
@@ -44,3 +137,38 @@ Dev Hub is a website where recruiters can find engineers all within one spot wit
     http://127.0.0.1:8000/admin/ now go this url in your browser and login with superuser credentials. Now in projects_skills section click on the skill and create some skills and then logout.
 
     now got to http://127.0.0.1:8000/ and explorer the site
+
+## Contributors
+ __Jethliya Balaji__
+
+ [//]: contributor-faces
+
+<a target="_blank" href="https://github.com/jethliya-balaji"><img src="https://avatars.githubusercontent.com/u/74290492?v=4" title="Balaji" width="80" height="80"></a>
+
+[//]: contributor-faces
+
+* Stack - Backend & Design
+* Email - yourmail@gmail.com 
+  
+__Adebowale Omolara__
+
+[//]: contributor-faces
+
+<a target="_blank" href="https://github.com/omolara5861"><img src="https://avatars.githubusercontent.com/u/72765403?v=4" title="omolara" width="80" height="80"></a>
+
+[//]: contributor-faces
+* Stack - Frontend 
+* Email - debbiegterra@gmail.com
+
+__Ishika Agrawal__
+
+[//]: contributor-faces
+
+<a target="_blank" href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/80105387?v=4" title="Ishika" width="80" height="80"></a>
+
+[//]: contributor-faces
+* Stack - Frontend
+* Email - ishikaagrawal0711@gmail.com
+
+## Acknowledgement
+We sincerely appreciate the organizers and the sponsors for this hackathon and for everything that was put in place to make it a success. We have been pushed to do a lot during the course of this hackathon. We are grateful for this opportunity that was given to learn, grow, and also connect with other amazing designers and developers.
