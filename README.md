@@ -23,7 +23,9 @@ The primary feature of the site is that all developers' crucial information is f
 9. [Acknowlodgement](#acknowledgement)
 10. [Contributors](#contributors)
 
+## Introduction
 
+This markdown file contains all technical documentation related to the setup, deployment, update, and customization of DevHub web application.
 
 ## Start The App
 
