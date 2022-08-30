@@ -1,4 +1,4 @@
-<img src="../../devhub/DevHub/static/images/devhub.png" alt="DevHub Homepage" />
+<img src="https://i.im.ge/2022/08/30/Oyc0t1.devhub.png" alt="DevHub Homepage" />
 
 ## Welcome to the official repository of DevHub web application. 
  __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a target="_blank" href="https://github.com/divanov11">Dennis Ivy</a> sponsored by <a target="_blank" href="https://harperdb.io/">Harper DB</a> and <a target="_blank" href="https://www.agora.io/en/">Agora</a> 
