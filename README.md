@@ -1,5 +1,3 @@
-<img src="https://i.im.ge/2022/08/30/Oyc0t1.devhub.png" alt="DevHub Homepage" />
-
 ## Welcome to the official repository of DevHub web application. 
  __Note__ : This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11" target="_blank" >Dennis Ivy</a> sponsored by <a target="_blank" href="https://harperdb.io/">Harper DB</a> and <a target="_blank" href="https://www.agora.io/en/">Agora</a> 
 
@@ -114,9 +112,13 @@ git clone https://github.com/jethliya-balaji/DevHub.git
 
     :warning: **Don't use your personal Linkedin because we are using [linkedin-api](https://pypi.org/project/linkedin-api/) module & not the official linkedin APIs**: Be very careful here!
 
-- **Making Virtual Environment:** In the same directory as manage.py run the following command to create virtual environment
+- **Making Virtual Environment:** In the same directory as manage.py run the following command to create virtual environment & activate it.
 
     `python -m venv env`
+
+    `source env/Scripts/activate` use this to activate from git bash.
+    
+    `.\env\Scripts\activate` use this to activate from windows terminal.
 
 - **Creating Database & Database Tables:** In the same directory as manage.py run the following command to creating database & database tables.
 
@@ -148,7 +150,7 @@ git clone https://github.com/jethliya-balaji/DevHub.git
 [//]: contributor-faces
 
 * Stack - Backend & Design
-* Email - yourmail@gmail.com 
+* Email - jethliya.balaji1@gmail.com
   
 __Adebowale Omolara__
 
