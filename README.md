@@ -153,8 +153,7 @@ __Adebowale Omolara__
 
 [//]: contributor-faces
 
-<a href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/72765403?v=4
-" title="omolara" width="80" height="80"></a>
+<a href="https://github.com/ishika-ag7"><img src="https://avatars.githubusercontent.com/u/72765403?v=4" title="omolara" width="80" height="80"></a>
 
 [//]: contributor-faces
 * Stack - Frontend 
