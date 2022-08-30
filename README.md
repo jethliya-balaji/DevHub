@@ -1,6 +1,15 @@
-# Dev Hub
+<img src="../../devhub/DevHub/static/images/devhub.png" alt="DevHub Homepage" />
 
-Dev Hub is a website where recruiters can find engineers all within one spot without having to visit other websites. This project is indeed a part of a hackathon. This hackathon was brought to us by Dennis Ivy and is sponsored by Harper DB and Agora.
+## Welcome to the official repository of DevHub web application. 
+### Note: This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by Harper DB and Agora
+
+<br>
+
+## About Project
+DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
+The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out. 
+
+
 
 
 ## Start The App
