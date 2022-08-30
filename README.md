@@ -1,7 +1,8 @@
 <img src="../../devhub/DevHub/static/images/devhub.png" alt="DevHub Homepage" />
 
 ## Welcome to the official repository of DevHub web application. 
-### Note: This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by Harper DB and Agora
+### Note: 
+This project is an entry for the Hackathon Code-Battle-Edition organized by <a href="https://github.com/divanov11">Dennis Ivy</a> sponsored by Harper DB and Agora
 
 <br>
 
@@ -9,6 +10,18 @@
 DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
 The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out. 
 
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Prerequisite](#prerequisite)
+5. [Setup and Instatllation](#setup-and-installation)
+6. [Product Specification](#product-specialization)
+7.  [Usage](#usage)
+8. [How To Contribute](#how-to-contribute)
+9. [Acknowlodgement](#acknowledgement)
+10. [Contributors](#contributors)
 
 
 
