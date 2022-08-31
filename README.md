@@ -3,7 +3,6 @@
 
 <br>
 
-
 ## Table of Contents
 
 - [Welcome to the official repository of DevHub web application.](#welcome-to-the-official-repository-of-devhub-web-application)
@@ -12,11 +11,11 @@
 - [About Project](#about-project)
 - [Project Images Preview](#project-images-preview)
   - [Homepage Preview](#homepage-preview)
+  - [Search Page Preview](#search-page-preview)
   - [Profile Page Preview](#profile-page-preview)
+  - [Saved Profiles Page Preview](#saved-profiles-page-preview)
   - [Account Page Preview](#account-page-preview)
   - [Edit Account Page Preview](#edit-account-page-preview)
-  - [Saved Profiles Page Preview](#saved-profiles-page-preview)
-  - [Search Page Preview](#search-page-preview)
   - [Add Project Page Preview](#add-project-page-preview)
   - [Edit Project Page Preview](#edit-project-page-preview)
   - [Add Skills Page Preview](#add-skills-page-preview)
