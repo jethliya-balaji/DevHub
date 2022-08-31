@@ -11,7 +11,6 @@
 - [About Project](#about-project)
 - [Project Images Preview](#project-images-preview)
   - [Homepage Preview](#homepage-preview)
-  - [Search Page Preview](#search-page-preview)
   - [Profile Page Preview](#profile-page-preview)
   - [Saved Profiles Page Preview](#saved-profiles-page-preview)
   - [Account Page Preview](#account-page-preview)
@@ -41,9 +40,6 @@ The primary feature of the site is that all developers' crucial information is g
 
 ### Homepage Preview
 ![Homepage](devhub%20-images/homepage-for-hr.png)
-
-### Search Page Preview
-![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
 
 ### Profile Page Preview
 **Note:** The following linkedin info is fetched from LinkedIn
@@ -212,7 +208,9 @@ git clone https://github.com/jethliya-balaji/DevHub.git
 
 * Stack - Backend & Design
 * Email - jethliya.balaji1@gmail.com
-  
+  __Feedback from Omolara__
+*I'm completely blown away by your thoughtfulness and dedication to this project. You went above and beyond to make this work. Thank you so much for your hard work! I couldn't have wished for a better teammate*
+
 __Adebowale Omolara__
 
 [//]: contributor-faces
@@ -222,6 +220,8 @@ __Adebowale Omolara__
 [//]: contributor-faces
 * Stack - Frontend 
 * Email - debbiegterra@gmail.com
+__Feedback from Balaji__
+*I appreciate the fact that you stood in gap for Ishika agrawal since she had some other issues. What distinguishes you is that you don't just do the work for the sake of doing it; instead, you strive to make it as perfect as possible. You make the team stronger than it was before. Keep up the good work.*
 
 __Ishika Agrawal__
 
@@ -232,6 +232,12 @@ __Ishika Agrawal__
 [//]: contributor-faces
 * Stack - Frontend
 * Email - ishikaagrawal0711@gmail.com
+__Feedback from Balaji__
+*You are one of the best front-end developers I have ever encountered, yet I saw that you fell short of the expectations that were placed on you. I always value your work, but you should collaborate with others and seek assistance when necessary.*
+__Feedback from Omolara__
+*Weldone on the effort you put to make this work*
+
+
 
 ## Acknowledgement
 We sincerely appreciate the organizers and the sponsors for this hackathon and for everything that was put in place to make it a success. We have been pushed to do a lot during the course of this hackathon. We are grateful for this opportunity that was given to learn, grow, and also connect with other amazing designers and developers.
