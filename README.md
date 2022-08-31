@@ -46,6 +46,7 @@ The primary feature of the site is that all developers' crucial information is f
 ### Search Page Preview
 ![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
 
+**Note:** The following linkedin info is fetched from LinkedIn
 ### Profile Page Preview
 
 ![Profile Page](devhub%20-images/hr-profile-page.png)
