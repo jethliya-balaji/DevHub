@@ -35,7 +35,7 @@ This markdown file contains all technical documentation related to the setup, de
 
 ## About Project
 DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
-The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out. 
+The primary feature of the site is that all developers' crucial information is gotten from the developers, this is to ensure that no detail of a developer is left out. 
 
 ## Project Images Preview 
 
@@ -113,19 +113,24 @@ Below are some of the major features of DevHub:
 
 __Hiring Managers__ - An individual that is interested in hiring developers. Users registered as HRs would have access to the following pages after registration:
 
-    - Home page, they can browse through developers on the page 
-    - Visit the platform to view basic information about it
-    - View and Interact with the documentation
-    - No access to use until registered
+    - Homepage, they can browse through developers on the page 
+    - Profile Page, see thier profiles, can edit etc
+    - Account Page
+    - Edit Account Page, to update relevant informations related to their accounts
+    - Saved Profiles Page, to see developers profiles that was saved for later review or for other reason
+    - Searched Page, to search for developers 
 
 
 __Developers__ - An individual that is interested in getting a job as a developer. Users registered as developers would have access to the following pages:
 
-    - Home page, they can browse through developers on the page 
-    - Visit the platform to view basic information about it
-    - View and Interact with the documentation
-    - No access to use until registered
-
+    - Profile Page, see thier profiles, can edit etc
+    - Account Page
+    - Searched Page, to search for developers to collaborate with
+    - Add Project Page, to add their projects
+    - Edit Project Page, to edit the projects on their profiles
+    - Add Skills Page, to add their skills
+    - skill Page, to edit the skills on their profiles
+   
 ## Usage
 
  * Visit the website
