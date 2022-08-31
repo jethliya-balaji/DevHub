@@ -44,9 +44,17 @@ The primary feature of the site is that all developers' crucial information is f
 
 ![Homepage](devhub%20-images/homepage-for-hr.png)
 
+### Search Page Preview
+![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
+
 ### Profile Page Preview
 
 ![Profile Page](devhub%20-images/hr-profile-page.png)
+
+**Note:** The following pages are only visible to Hiring Managers
+
+### Saved Profiles Page Preview
+![Saved Profile Page HRs](devhub%20-images/saved-profile-pages-only-for-hrs.png)
 
 ### Account Page Preview
 __Logged in as Hiring Manager__
@@ -62,13 +70,6 @@ __Logged in as Hiring Manager__
 __Logged in as a Developer__
 ![Edit Account Page for Developers](devhub%20-images/edit-account-page-for-devs.png)
 
-**Note:** The following pages are only visible to Hiring Managers
-
-### Saved Profiles Page Preview
-![Saved Profile Page HRs](devhub%20-images/saved-profile-pages-only-for-hrs.png)
-
-### Search Page Preview
-![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
 
 **Note:** The following pages are only visible to Developers
 
