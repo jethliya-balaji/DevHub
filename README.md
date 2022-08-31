@@ -14,6 +14,10 @@
   - [Homepage Preview](#homepage-preview)
   - [Account Page Preview](#account-page-preview)
   - [Edit Account Page Preview](#edit-account-page-preview)
+  - [Saved Profiles Page Preview](#saved-profiles-page-preview)
+  - [Search Page Preview](#search-page-preview)
+  - [Saved Profiles Page Preview](#saved-profiles-page-preview-1)
+  - [Search Page Preview](#search-page-preview-1)
 - [Tools & Technologies Used](#tools--technologies-used)
 - [Features](#features)
 - [Usage](#usage)
@@ -51,7 +55,20 @@ __Logged in as Hiring Manager__
 __Logged in as a Developer__
 ![Edit Account Page for Developers](devhub%20-images/edit-account-page-for-devs.png)
 
-**Note:** The following pages 
+**Note:** The following pages are only visible to Hiring Managers
+
+### Saved Profiles Page Preview
+![Saved Profile Page HRs](devhub%20-images/saved-profile-pages-only-for-hrs.png)
+
+### Search Page Preview
+![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
+
+**Note:** The following pages are only visible to Developers
+### Saved Profiles Page Preview
+![Saved Profile Page HRs](devhub%20-images/saved-profile-pages-only-for-hrs.png)
+
+### Search Page Preview
+![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
 
 ## Tools & Technologies Used
 This project was developed using ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) and the following technologies were used: <br/>
