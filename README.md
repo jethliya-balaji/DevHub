@@ -34,7 +34,7 @@ This markdown file contains all technical documentation related to the setup, de
 
 ## About Project
 DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
-The primary feature of the site is that all developers' crucial information is gotten from the developers, this is to ensure that no detail of a developer is left out. 
+The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out.
 
 ## Project Images Preview 
 
