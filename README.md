@@ -208,6 +208,7 @@ git clone https://github.com/jethliya-balaji/DevHub.git
 
 * Stack - Backend & Design
 * Email - jethliya.balaji1@gmail.com
+
   __Feedback from Omolara__
 *I'm completely blown away by your thoughtfulness and dedication to this project. You went above and beyond to make this work. Thank you so much for your hard work! I couldn't have wished for a better teammate*
 
@@ -220,6 +221,7 @@ __Adebowale Omolara__
 [//]: contributor-faces
 * Stack - Frontend 
 * Email - debbiegterra@gmail.com
+
 __Feedback from Balaji__
 *I appreciate the fact that you stood in gap for Ishika agrawal since she had some other issues. What distinguishes you is that you don't just do the work for the sake of doing it; instead, you strive to make it as perfect as possible. You make the team stronger than it was before. Keep up the good work.*
 
@@ -232,6 +234,7 @@ __Ishika Agrawal__
 [//]: contributor-faces
 * Stack - Frontend
 * Email - ishikaagrawal0711@gmail.com
+
 __Feedback from Balaji__
 *You are one of the best front-end developers I have ever encountered, yet I saw that you fell short of the expectations that were placed on you. I always value your work, but you should collaborate with others and seek assistance when necessary.*
 __Feedback from Omolara__
