@@ -12,6 +12,7 @@
 - [About Project](#about-project)
 - [Project Images Preview](#project-images-preview)
   - [Homepage Preview](#homepage-preview)
+  - [Profile Page Preview](#profile-page-preview)
   - [Account Page Preview](#account-page-preview)
   - [Edit Account Page Preview](#edit-account-page-preview)
   - [Saved Profiles Page Preview](#saved-profiles-page-preview)
@@ -41,7 +42,11 @@ The primary feature of the site is that all developers' crucial information is f
 
 ### Homepage Preview
 
-![home page](devhub%20-images/homepage-for-hr.png)
+![Homepage](devhub%20-images/homepage-for-hr.png)
+
+### Profile Page Preview
+
+![Profile Page](devhub%20-images/hr-profile-page.png)
 
 ### Account Page Preview
 __Logged in as Hiring Manager__
