@@ -208,7 +208,7 @@ git clone https://github.com/jethliya-balaji/DevHub.git
 
 * Stack - Backend & Design
 * Email - jethliya.balaji1@gmail.com <br/>
-  __Feedback from Omolara__
+  __Feedback from Omolara__ <br/>
 *I'm completely blown away by your thoughtfulness and dedication to this project. You went above and beyond to make this work. Thank you so much for your hard work! I couldn't have wished for a better teammate*
 
 __Adebowale Omolara__
