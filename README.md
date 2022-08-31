@@ -10,6 +10,14 @@
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [About Project](#about-project)
+- [Project Images Preview](#project-images-preview)
+  - [Homepage Preview](#homepage-preview)
+  - [Account Page Preview](#account-page-preview)
+  - [Edit Account Page Preview](#edit-account-page-preview)
+  - [Saved Profiles Page Preview](#saved-profiles-page-preview)
+  - [Search Page Preview](#search-page-preview)
+  - [Saved Profiles Page Preview](#saved-profiles-page-preview-1)
+  - [Search Page Preview](#search-page-preview-1)
 - [Tools & Technologies Used](#tools--technologies-used)
 - [Features](#features)
 - [Usage](#usage)
@@ -26,6 +34,41 @@ This markdown file contains all technical documentation related to the setup, de
 ## About Project
 DevHub is a web application that makes finding talented developers easy for Hiring Managers. This application is aimed at solving One of the major challenges faced by Hiring Managers, which is the lack of an easy process for finding developer/tech talent. With DevHub, the need for recruiters to visit multiple websites in search of developers has been eliminated. Talented Developers can now be found in a single search. Hiring Managers can search for a developer's information and save it for subsequent review.
 The primary feature of the site is that all developers' crucial information is fetched from different APIs, this is to ensure that no detail of a developer is left out. 
+
+## Project Images Preview 
+
+### Homepage Preview
+
+![home page](devhub%20-images/homepage-for-hr.png)
+
+### Account Page Preview
+__Logged in as Hiring Manager__
+![Account Page for HR](devhub%20-images/hr-account-page.png)
+
+__Logged in as a Developer__
+![Account Page for Developers](devhub%20-images/developers-account-page.png)
+
+### Edit Account Page Preview
+__Logged in as Hiring Manager__
+![Edit Account Page for HR](devhub%20-images/edit-account-page-for-hr.png)
+
+__Logged in as a Developer__
+![Edit Account Page for Developers](devhub%20-images/edit-account-page-for-devs.png)
+
+**Note:** The following pages are only visible to Hiring Managers
+
+### Saved Profiles Page Preview
+![Saved Profile Page HRs](devhub%20-images/saved-profile-pages-only-for-hrs.png)
+
+### Search Page Preview
+![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
+
+**Note:** The following pages are only visible to Developers
+### Saved Profiles Page Preview
+![Saved Profile Page HRs](devhub%20-images/saved-profile-pages-only-for-hrs.png)
+
+### Search Page Preview
+![Saved Profile Page for HRs](devhub%20-images/Searched%20Page.png)
 
 ## Tools & Technologies Used
 This project was developed using ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) and the following technologies were used: <br/>
